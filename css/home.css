@@ -8,11 +8,12 @@ body {
             width: 76%;
             margin: 0 auto;
             background-color: #e0e0e6;
-            margin-top: 15px;
+            margin-top: 2%;
             box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
       }
       /* LEFT SIDE */
             .left-side {
+                  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
                   display: inline-block;
             }
             /* PROFILE */
@@ -202,6 +203,7 @@ body {
                                           .social-media > div > a {
                                                 color: #7a7a7a;
                                                 transition-delay: .5s ease;
+                                                font-weight: bold;
                                           }
                                           .social-media > div > a:hover {
                                                 color: #2e2d2d;
@@ -218,5 +220,301 @@ body {
 
             /* END PROFILE */
       /* END LEFT SIDE */
-      
+
+      /* TIMELINE */
+            .timeline {
+                  display: inline-block;
+                  position: absolute;
+                  overflow-y: scroll;
+                  overflow-x: hidden;
+                  width: 56.7%;
+                  height: 835px;
+            }
+            .timeline::-webkit-scrollbar {
+                  display: none;
+              }
+            /* TIMELINE HEADER */ 
+                  .timeline-header {
+                        width: 100%;
+                        display: inline-block;
+                  }
+                  .timeline-header::before {    
+                        content: "";
+                        background: url("../images/timeline/bg.jpg");
+                        background-repeat: no-repeat;
+                        background-size: 100% 600px;
+                        position: absolute;
+                        height: 411px;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        left: 0px;
+                        opacity: .04;
+                  }
+
+                  /* TIMELINE HEADER LINE */
+                        .timeline-header-line {
+                              width: 85%;
+                              height: 30px;
+                              background-color: #fff;
+                              border-radius: 4px 4px 0px 0px;
+                              margin: 0 auto;
+                              margin-top: 25px;
+                        }
+                  /* END TIMELINE HEADER LINE */
+
+                  /* TIMELINE HEADER BANNER */
+                        .timeline-header-banner {
+                              width: 92%;
+                              height: 356px;
+                              background-image: url("../images/timeline/bg.jpg");
+                              background-repeat: no-repeat;
+                              background-size:1000px 700px;
+                              margin: 0 auto;
+                        }
+                        /* TIMELINE HEADER BANNER HEADINGS */
+                              .timeline-header-banner-headings {
+                                    color: white;
+                                    font-size: 50px;
+                                    font-weight: 800;
+                                    width: 100%;
+                                    height: 100%;
+                              }
+                              /* TIMELINE HEADER BANNER HEADERS */
+                                    .timeline-header-banner-headers {
+                                          position: relative;
+                                          top: 100px;
+                                          left: 50px;
+                                    }
+                              /* END TIMELINE HEADER BANNER HEADERS */
+
+                              /* TIMELINE HEADER BANNER HEADINGS A */
+                                    .timeline-header-banner-headings-button {
+                                          padding: 12px 40px;
+                                          font-size: 15px;
+                                          font-weight: 800;
+                                          color: #1e1e28;
+                                          background-color: #f44336;
+                                          position: relative;
+                                          top: 130px;
+                                          left: 85px;                      
+                                    }
+                              /* END TIMELINE HEADER BANNER HEADINGS A */
+
+                              /* TIMELINE HEADER BANNER HEADINGS MAN */
+                                    .timeline-header-banner-headings-man {
+                                          position: relative;
+                                          width: 390px;
+                                          top: -38px;
+                                          float: right;  
+                                    }
+                              /* END TIMELINE HEADER BANNER HEADINGS MAN */
+                        /* END TIMELINE HEADER BANNER HEADINGS */
+                  /* END TIMELINE HEADER BANNER */
+
+                  /* TIMELINE EXPERIENCES */
+                       .timeline-experiences {
+                        width: 100%;
+                        display: inline-block;
+                        text-align: center;
+                        position: relative;
+                        top: -22px;
+                       }
+                       /* TIMELINE EXPERIENCES EXPERIENCE */
+                              .timeline-experiences-experience {
+                                    display: inline-block;
+                                    padding-left: 50px;
+                                    padding-right: 50px;
+                              }
+
+                              /* TIMELINE EXPERIENCES EXPERIENCE HEADING */
+                                    .timeline-experiences-experience-heading {
+                                          display: inline-block;
+                                          font-weight: 500;
+                                          font-size: 22px;
+                                          color:#f44336;
+                                    }
+                              /* END TIMELINE EXPERIENCES EXPERIENCE HEADING */
+
+                              /* TIMELINE EXPERIENCES EXPERIENCE P */
+                                    .timeline-experiences-experience-p {
+                                          display: inline-block;
+                                          font-size: 13px;
+                                    }
+                              /* END TIMELINE EXPERIENCES EXPERIENCE P */
+
+                       /* END TIMELINE EXPERIENCES EXPERIENCE */
+                  /* END TIMELINE EXPERIENCES */
+
+            /* END TIMELINE HEADER*/
+
+
+
+            /* TIMELINE SERVICES */
+                  .timeline-services {
+                        width: 100%;
+                        margin-top: 30px;
+                        text-align: center;
+                  }
+                  /* TIMELINE SERVICE BOX */
+                        .timeline-service-box {
+                              display: inline-block;
+                              width: 277px;
+                              height: 189px;
+                              text-align: start;
+                              background-color: #fff;
+                              box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                              margin: 10px;
+                        }
+                        /* TIMELINE-SERVICE-BOX-HEADINGS */
+                        .timeline-service-box {
+                              padding: 25px;
+                        }
+                              .timeline-service-box-h1 {
+                                    font-size: 14px;
+                              }
+                              .timeline-services-box-p {
+                                    font-size: 12px;
+                                    letter-spacing: .25px;
+                                    line-height: 1.7;
+                                    color: #7a7a7a;
+                                    top: 20px;
+                                    position: relative;
+                              }
+                              .timeline-services-box-a {
+                                    text-decoration: none;
+                                    color: #f44336;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    top: 40px;
+                                    position: relative;
+                              }
+                        /* END TIMELINE-SERVICE-BOX-HEADINGS */
+                  /* END TIMELINE SERVICE BOX */
+            /* END TIMELINE SERVICES */
+
+
+
+
+            /* TIMELINE PRICE */
+                  .timeline-prices {
+                        width: 100%;
+                        text-align: center;
+                  }
+                  /* TIMELINE PRICE BOX*/
+                        .timeline-price-box {
+                              display: inline-block;
+                              width: 300px;
+                              height: 370px;
+                              background-color: #fff;
+                              box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                              margin: 10px;
+                        }
+                        /* TIMELINE PRICE BOX HEADINGS */
+                              .timeline-price-box-headings {
+                                    padding: 30px;
+                              }
+                              /* TIMELINE PRICE BOX INNER HEADINGS */
+                                    .timeline-prices-price-box-headings-h1 {
+                                          font-size: 15px;
+                                          font-weight: 500;
+                                          padding: 20px;
+                                    }
+                                    .timeline-price-box-headings-h3-price {
+                                          color:#7a7a7a;
+                                          font-size: 13px;
+                                    }
+                                    .free {
+                                          color:#f44336;
+                                          font-weight: 600;
+                                          font-size: 32px;
+                                    }
+                                    .timeline-price-box-headings-li-includes {
+                                          font-size: 13px;
+                                          font-weight: 400;
+                                          color:#7a7a7a;
+                                          padding-top: 10px;
+                                          padding-bottom: 15px;
+                                    }
+                                    .x {
+                                          color:#f44336;
+                                          font-size: 16px;
+                                          font-weight: 600;
+                                    }
+                                    #include-check {
+                                          color: black !important;
+                                    }
+
+                                    .timeline-price-box-headings-a {
+                                          color:#f44336;
+                                          font-size: 16px;
+                                          text-decoration: none;
+                                          font-weight: 500;
+                                    }
+                              /* END TIMELINE PRICE BOX INNER HEADINGS */
+                        /* END TIMELINE PRICE BOX HEADINGS */
+                  /* END TIMELINE PRICE BOX */
+            /* END TIMELINE  PRICE */
+
+
+
+            /* SECTIONS GENERAL CODE */
+                  .section-h1 {
+                        font-size: 17px;
+                        font-weight: 500;
+                        margin-left: 60px;
+                        margin-top: 10px;
+                  }
+            /* END SECTIONS GENERAL CODE */
+      /* END TIMELINE */
+
+      /* MENU */
+            .menu {
+                  width: 80px;
+                  height: 834px;
+                  background-color:  #e0e0e6;
+                  float: right;
+                  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+            }
+            /* MENU BURGER BUTTON */
+                  .menu-burger-button {
+                        text-align: center;
+                        padding: 28px;
+                        background: linear-gradient(159deg,rgba(255,255,255,1) 0%,rgba(255,255,255,.95) 100%);
+                        box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                  }
+                  .menu-burger-button > i {
+                        font-size: 20px;
+                        cursor: pointer;
+                  }
+            /* END MENU BURGER BUTTON */
+
+            /* MENU CONTENT */
+                  .menu-content {
+                        margin-top: 223px;
+                        width: 252px;
+                        display: none;
+                  }
+                  /* MENU CONTENT div */
+                        .menu-content-div {
+                              padding: 10px;
+                        }
+                        
+                        /* MENU CONTENT DIV LI */
+
+                              /* MENU CONTENT DIV LI A */
+                                    .menu-content-div-li-a {
+                                          color: #7a7a7a;
+                                          font-weight:  400;
+                                          text-decoration: none;
+                                    }
+                              /* END MENU CONTENT DIV LI A */
+
+                        /* END MENU CONTENT DIV LI */
+
+                  /* END MENU CONTENT DIV */
+            /* END MENU CONTENT */
+
+      /* END MENU */
+
 /* END CONTAINER */
