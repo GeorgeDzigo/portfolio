@@ -585,6 +585,207 @@ body {
                         /* END TIMELINE WORKS HOLDER WORK */
                   /* END TIMELINE WORKS CATEGORIES */
             /* END WORKS */
+            /* TIMELINE EDU WORK HISTORY */
+                  /* TIMELINE EDUCATION HISTORY */
+                        .timeline-eduhis {
+                              width: 50%;
+                              display: inline-block;
+                        }
+                        /* TIMELINE EDUCATION HISTORY HOLDER */
+                              .timeline-eduhis-holder {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 30px;
+                              }
+                              /* TIMELINE EDUCATION HISTORY HOLDER BOX */
+                                    .timeline-eduhis-holder-box {
+                                          width: 70%;
+                                          height: 70%;
+                                          padding: 30px;
+                                          margin: 25px;
+                                          background-color: white;
+                                          box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                                    }
+
+                                    /* TIMELINE EDUHIS HOLDER BOX HEADINGS */
+                                          .timeline-eduhis-holder-box-headings-unvn {
+                                                padding: 5px;
+                                                font-size: 15px;
+                                                display: inline-block;
+                                                font-weight: 500;
+                                          }.timeline-eduhis-holder-box-headings-date {
+                                                padding: 10px 15px;
+                                                border-radius: 100px;
+                                                box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
+                                                font-size: 13px;
+                                                font-weight: 500;
+                                                color: #54595f;
+                                                float: right;
+                                                display: inline-block;
+                                          }
+                                          .timeline-eduhis-holder-box-headings-role {
+                                                padding: 5px;
+                                                font-size: 11px;
+                                                color: #7a7a7a;
+                                          }
+                                          .timeline-eduhis-holder-box-headings-p {
+                                                padding: 5px;
+                                                font-size: 15px;
+                                                font-weight: 300;
+                                          }
+
+                                          .timeline-eduhis-holder-box-headings-a {
+                                                text-decoration: none;
+                                                position: relative;
+                                                font-size: 13px;
+                                                font-weight: 500;
+                                                color: #f44336;
+                                                padding: 5px;
+                                                top: 5px;
+                                          }
+                                          
+                                    /* END TIMELINE EDUHIS HOLDER BOX HEADINGS */
+                                    
+                                    /* TIMELINE EDUHIS LINE */
+                                          .timeline-eduhis-line {
+                                                height: 187px;
+                                                width: 5px;
+                                                position: relative;
+                                                top: -191px;
+                                                background-color:#ababab;
+                                                box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                                                float: right;
+                                          }                                      
+                                    /* TIMELINE EDUHIS LINE */
+                                          
+                              /* END TIMELINE EDUCATION HISTORY HOLDER BOX */
+                        /* END TIMELINE EDUCATION HISTORY HOLDER */
+                  /* END TIMELINE EDUCATION HISTORY */
+
+                  /* TIMELINE WORK HISOTRY */
+                  .timeline-workhis {
+                        width: 45%;
+                        display: inline-block;
+                  }
+                  /* TIMELINE WORK HISOTRY HOLDER */
+                        .timeline-workhis-holder {
+                              width: 100%;
+                              height: 100%;
+                              margin: 30px;
+                        }
+                        /* TIMELINE WORK HISOTRY HOLDER BOX */
+                              .timeline-workhis-holder-box {
+                                    width: 70%;
+                                    height: 70%;
+                                    padding: 30px;
+                                    margin: 25px;
+                                    background-color: white;
+                                    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                              }
+
+                              /* TIMELINE workhis HOLDER BOX HEADINGS */
+                                    .timeline-workhis-holder-box-headings-unvn {
+                                          padding: 5px;
+                                          font-size: 15px;
+                                          display: inline-block;
+                                          font-weight: 500;
+                                    }.timeline-workhis-holder-box-headings-date {
+                                          padding: 10px 15px;
+                                          border-radius: 100px;
+                                          box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
+                                          font-size: 13px;
+                                          font-weight: 500;
+                                          color: #54595f;
+                                          float: right;
+                                          display: inline-block;
+                                    }
+                                    .timeline-workhis-holder-box-headings-role {
+                                          padding: 5px;
+                                          font-size: 11px;
+                                          color: #7a7a7a;
+                                    }
+                                    .timeline-workhis-holder-box-headings-p {
+                                          padding: 5px;
+                                          font-size: 15px;
+                                          font-weight: 300;
+                                    }
+
+                                    .timeline-workhis-holder-box-headings-a {
+                                          text-decoration: none;
+                                          position: relative;
+                                          font-size: 13px;
+                                          font-weight: 500;
+                                          color: #f44336;
+                                          padding: 5px;
+                                          top: 5px;
+                                    }
+                                    
+                              /* END TIMELINE workhis HOLDER BOX HEADINGS */
+                              
+                              /* TIMELINE workhis LINE */
+                                    .timeline-workhis-line {
+                                          height: 172px;
+                                          width: 5px;
+                                          position: relative;
+                                          top: -191px;
+                                          background-color:#ababab;
+                                          box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                                          float: right;
+                                    }                                      
+                              /* TIMELINE workhis LINE */
+                                    
+                        /* END TIMELINE WORK HISOTRY HOLDER BOX */
+
+                  /* END TIMELINE WORK HISOTRY HOLDER */
+
+             /* END TIMELINE WORK HISOTRY */
+
+            /* END TIMELINE EDU WORK HISTORY */
+
+
+            /* TIMELINE CONTACT INFORMATION */
+                  .contact-informations {
+                        width: 100%;
+                  }
+                  /* CONTACT INFORMATIONS HOLDER */
+                        .contact-informations-holder {
+                              width: 100%;
+                              margin: 30px;
+                        }
+
+                        /* CONTACT INFORMATION HOLDER */
+                              .contact-information-holder {
+                                    background-color: #fff;
+                                    padding: 30px;
+                                    display: inline-block;
+                                    width: 23%;
+                                    height: 100%;
+                              }
+                              /* Q&A*/
+                                    .contact-information-holder-ques {
+                                          display: inline-block;
+                                    }
+                                    .contact-information-holder-ques-li {
+                                          padding: 7px;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                    }
+                                    .contact-information-holder-answ {
+                                          display: inline-block;
+                                          margin-left: 30px;
+                                    }
+                                    .contact-information-holder-answ-li {
+                                          padding: 7px;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                    }
+                              /* END Q&A */
+                        /* END CONTACT INFORMATION HOLDER */
+
+                  /* END CONTACT INFORMATONS HOLDER */
+                  
+            /* END TIMELINE CONTACT INFORMATION */
+            
 
             /* SECTIONS GENERAL CODE */
                   .section-h1 {
@@ -592,6 +793,34 @@ body {
                         font-weight: 500;
                         margin-left: 60px;
                         margin-top: 10px;
+                  }
+                  .pointer {
+                        width: 10px;
+                        height: 10px;
+                        float: right;
+                        position: relative;
+                        right: -9%;
+                        border-top-right-radius: 50%;
+                        transform: rotate(-135deg);
+                        box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                        background-color: #fff;
+                  }
+                  .timeline-pointer {
+                        width: 12px;
+                        height: 12px;
+                        float: right;
+                        position: relative;
+                        border: 3px solid #f44336;
+                        right: -31.8%;
+                        z-index: 1;
+                        border-radius: 50%;
+                        transform: rotate(-135deg);
+                        box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                        background-color: #fff;
+                  }
+
+                  .timeline-eduhis {
+                        width: 45%;
                   }
             /* END SECTIONS GENERAL CODE */
       /* END TIMELINE */
