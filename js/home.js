@@ -3,7 +3,7 @@ function works() {
             {
                   "img": "./images/works/1.jpg",
                   "title": "CODE",
-                  "desc": "This is my old portfolio, which is being replaced with the one you are seeing now",
+                  "desc": "This is my old portfolio, which is being replaced with the one you are seeing now.",
                   "link": "./page.html?p=code"
             }, 
             {
@@ -29,7 +29,7 @@ function works() {
       let holder = document.getElementById("timeline-works-holder");
       for (let i = 0; i < data.length; i++) {
             holder.innerHTML += `
-            <div class="timeline-works-holder-work"id="timeline-works-holder-work-headings-bgimg" style="background-image: url('${data[i]["img"]}')">
+            <div class="timeline-works-holder-work" id="box" style="background-image: url('${data[i]["img"]}')">
                   <div class="timeline-works-holder-work-headings">
                         <h1 class="timeline-works-holder-work-headings-h1" id="timeline-works-holder-work-headings-title">${data[i]["title"]}</h1>
                         <p class="timeline-works-holder-work-headings-p" id="timeline-works-holder-work-heaings-desc">
@@ -42,7 +42,7 @@ function works() {
             `;
       }
 
-      let btn = document.querySelectorAll('#timeline-works-holder-work-headings-bgimg');
+      let btn = document.querySelectorAll('.timeline-works-holder-work');
       let toD = document.querySelectorAll('.timeline-works-holder-work-headings');
       console.log(toD);
       for (let i = 0; i < btn.length; i++) {
@@ -78,7 +78,7 @@ function education() {
             
             holder.innerHTML += `
                         <div class="timeline-eduhis-box-container">
-                              <div class="timeline-eduhis-holder-box">
+                              <div class="timeline-eduhis-holder-box" id="box">
                                           <div class="timeline-eduhis-holder-box-headings">
                                                 <div class="pointer"></div>
                                                 <div class="timeline-pointer"></div>
@@ -116,14 +116,14 @@ function work() {
                   "title": "KitchenDesign",
                   "date": "Summer, 2019",
                   "role": "Front-End Developer",
-                  "theme": "This Is Basic Front-End Web, Just For Practice",
+                  "theme": "This Is Basic Front-End Web, Just For Practice. HTML/CSS/JS are used technologies",
                   "link": "https://www.coursera.org/account/accomplishments/verify/6WYSPPLKXDJH",
             },
             {
                   "title": "CODE",
                   "date": "June, 2020 - Aug, 2020",
                   "role": "Front-End Developr",
-                  "theme": "THis Is Basic Front-End Web, Just For Practice",
+                  "theme": "THis Is Basic Front-End Web, Just For Practice. HTML/CSS/JS are used technologies",
                   "link": "https://www.coursera.org/account/accomplishments/verify/6WYSPPLKXDJH",
             },
       ];
@@ -133,7 +133,7 @@ function work() {
             
             holder.innerHTML += `
                         <div class="timeline-workhis-box-container">
-                              <div class="timeline-workhis-holder-box">
+                              <div class="timeline-workhis-holder-box" id="box">
                                           <div class="timeline-workhis-holder-box-headings">
                                                 <div class="pointer"></div>
                                                 <div class="timeline-pointer"></div>
