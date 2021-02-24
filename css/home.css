@@ -461,7 +461,7 @@ body {
 
             /* RECOMMENDATIONS */
                   .recoms {
-                        width: 100%;
+                        width: 200%;
                         margin: 0 auto;
                         margin-top: 30px;
                   }
@@ -471,7 +471,7 @@ body {
                   
                   /* RECOMS HOLDER BOX */
                   .recoms-holder-box {
-                        width: 40%;
+                        width: 20%;
                         height: 180px;
                         padding: 30px;
                         margin: 20px;
@@ -489,6 +489,9 @@ body {
                         /* END RECOMS HOLDER RECOM IMG */
 
                         /* RECOMS HOLDER RECOM HEADINGS */
+                              .recoms-holder-recom-headings {
+                                    text-align: left;
+                              }
                               .recoms-holder-recom-headings-name {
                                     padding-bottom: 4px;
                                     font-weight: 500;
@@ -514,13 +517,14 @@ body {
 
                   /* ARROWS */
                         .recoms-arrows {
-                              text-align: end;
                               margin-right: 30px;
+                              text-align: end;
                         }
                         .recoms-arrows > div {
                               display: inline-block;
                               font-weight: 400;
                               font-size: 30px;
+                              cursor: pointer;
                               color: #f44336;
                         }
                   /* END ARROWS */
@@ -550,18 +554,18 @@ body {
                                     background-size: 100% 100%;
                                     margin: 20px;
                                     position: relative;
+                                    overflow: hidden;
                                     height: 250px;
                                     width: 40%;
                               }
                               /* TIMELINE WORKS HOLDER WORK HEADINGS */
                                     .timeline-works-holder-work-headings {
                                           background-color: #fff;
-                                          display: none;
                                           padding: 30px;
-                                          margin-top: 85px;
+                                          top: 250px;
                                           text-align: start;
                                           position: absolute;
-                                          width: 86.21%;
+                                          width: 86.32%;
                                           height: 42%;
                                     }
                                     .timeline-works-holder-work-headings-h1 {
@@ -664,15 +668,16 @@ body {
                         /* CONTACT INFORMATION HOLDER */
                               .contact-information-holder {
                                     padding: 30px;
-                                    margin: 30px;
-                                    width: 25%;
+                                    margin: 15px;
+                                    width: 278px;
                                     height: 100%;
                               }
                               /* Q&A*/
                                     .contact-information-holder-ques {
                                           display: inline-block;
+                                          float: left;
                                     }
-                                    .contact-information-holder-ques-li {
+                                    .contact-information-holder-answ-li, .contact-information-holder-ques-li {
                                           padding: 7px;
                                           font-size: 14px;
                                           font-weight: 400;
@@ -681,11 +686,7 @@ body {
                                           display: inline-block;
                                           float: right;
                                     }
-                                    .contact-information-holder-answ-li {
-                                          padding: 7px;
-                                          font-size: 14px;
-                                          font-weight: 400;
-                                    }
+                                   
                               /* END Q&A */
                         /* END CONTACT INFORMATION HOLDER */
 
@@ -694,6 +695,81 @@ body {
             /* END TIMELINE CONTACT INFORMATION */
             
 
+            /* GITCS FORM */
+                  .gitc-form {
+                        width: 100%;
+                        margin-top: 35px;
+                        text-align: center;
+                  }
+                  /* GITC FORM CONTAINER */
+                        .gitc-form-container {
+                              height: 100%;
+                              width: 90%;
+                              padding: 30px;
+                              text-align: start;
+                        }
+                  /* END GITC FORM CONTAINER */
+
+                  /* GITC FORM CONTAINER INPUTS */
+                        .gitcs-form-container-form > input  {
+                              width: 93.3%;
+                              height: 15%;
+                              padding: 10px;
+                              margin: 20px;
+                              background-color: #f4f4f6;
+                              box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                          }
+                          .gitcs-form-container-form > textarea  {
+                                border: none;
+                                padding: 10px;
+                                margin: 20px;
+                                width: 93.4%;
+                                background-color: #f4f4f6;
+                                box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                          }
+                          .gitcs-form-container-form > button {
+                                width: 200px;
+                                height: 50px;
+                                margin: 20px;
+                                padding: 10px;
+                                font-size: 15px;
+                                color: black;
+                                font-weight: 600;
+                                background-color: #f44336;
+                                box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                          }
+                          
+                  /* END GITC FORM CONTAINER INPUTS */
+                  
+            /* END GITC FORM */
+
+
+            /* TIMELINE FOOTER */
+                  .timeline-footer {
+                        width: 100%;
+                        margin-top: 50px;
+                        text-align: center;
+                  }
+
+                  /* TIMELINE FOOTER INFO CONTAINER */
+                        .timeline-footer-info-container {
+                              width: 90%;
+                              padding: 20px;
+                        }
+                        .timeline-footer-info-container > h1 {
+                              float: left;
+                              font-size: 14px;
+                              color: #7a7a7a;
+                        }
+                        .timeline-footer-info-container > span {
+                              float: right;
+                              font-size: 14px;
+                              color: #7a7a7a;
+                        }
+                        
+                  /* END TIMELINE FOOTER INFO CONTAINER */
+            /* END TIMELINE FOOTER */
+            
             /* SECTIONS GENERAL CODE */
                   .section-h1 {
                         font-size: 17px;
