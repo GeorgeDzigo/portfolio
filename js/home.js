@@ -294,3 +294,24 @@ function slider() {
       });
 }
 slider();
+
+var o = 0;
+function menuB() {
+      let toS = document.querySelectorAll(".menu-content-div");
+      console.log(toS);
+      if (o == 0) {
+            toS.forEach(v => {
+                  v.style.transition = ".5s ease";
+                  v.style.transform = "translate(-75px, 0)";
+            });
+            o++;
+      }
+      else {
+            o--;
+            toS.forEach(v => {
+                  v.style.transition = ".5s ease";
+                  v.style.transform = "translate(75px, 0)";
+            });
+            
+      }
+}
