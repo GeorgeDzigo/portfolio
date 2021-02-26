@@ -135,25 +135,22 @@
                   </div>
                   <div class="menu-content">
                         <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">HOME</a></li>
+                              <li class="menu-content-div-li"><a href="#home" class="menu-content-div-li-a">HOME</a></li>
                         </div>
                         <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">SERVICES</a></li>
+                              <li class="menu-content-div-li"><a href="#services" class="menu-content-div-li-a">SERVICES</a></li>
                         </div>
                         <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">WORKS</a></li>
+                              <li class="menu-content-div-li"><a href="#projects" class="menu-content-div-li-a">WORKS</a></li>
                         </div>
                         <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">RESUME</a></li>
+                              <li class="menu-content-div-li"><a href="#storyline" class="menu-content-div-li-a">RESUME</a></li>
                         </div>
-                        <div class="menu-content-div">
+                        <!-- <div class="menu-content-div">
                               <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">BLOG</a></li>
-                        </div>
+                        </div> -->
                         <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">CONTACT</a></li>
-                        </div>
-                        <div class="menu-content-div">
-                              <li class="menu-content-div-li"><a href="#" class="menu-content-div-li-a">BUY THEME</a></li>
+                              <li class="menu-content-div-li"><a href="#contact-info" class="menu-content-div-li-a">CONTACT</a></li>
                         </div>
                   </div>
             </div>
@@ -161,7 +158,7 @@
             <!-- Timeline -->
             <div class="timeline">
                   <div class="wrapper"></div>
-                  <header class="timeline-header">
+                  <header class="timeline-header" id="home">
                         <!-- White div line -->
                         <div class="timeline-header-line"></div>
                         <!-- Timeline banner -->
@@ -170,7 +167,7 @@
                                     <img src="./images/timeline/face-2-min.png" alt="" class="timeline-header-banner-headings-man">
                                     <h1 class="timeline-header-banner-headers">Discover my Amazing</h1>
                                     <h2 class="timeline-header-banner-headers">Art Space!</h2>
-                                    <a class="timeline-header-banner-headings-button">Explore Now</a>
+                                    <a class="timeline-header-banner-headings-button" href="./counter.php">Explore Now</a>
                                     
                               </div>
                         </div>
@@ -217,7 +214,7 @@
                   <!-- My Services -->
                   <h1 class="section-h1">My Services</h1>
 
-                  <section class="timeline-services">
+                  <section class="timeline-services" id="services">
 
                         
                   </section>
@@ -225,7 +222,7 @@
                   <!-- Price Plans -->
                   <h1 class="section-h1">My Services</h1>
             
-                  <section class="timeline-prices">
+                  <section class="timeline-prices" id="price-plans">
                         <div class="timeline-price-box" id="box">
                               <div class="timeline-price-box-headings">
                                     <h1 class="timeline-prices-price-box-headings-h1">Starter Price</h1>
@@ -266,7 +263,7 @@
                   
                   <!-- Recommendations -->
                   <h1 class="section-h1">Recommendations</h1>
-                  <section class="recoms">
+                  <section class="recoms" id="recommendations">
                         <div class="recoms-holder">
                               
                         </div>
@@ -279,7 +276,7 @@
                   <h1 class="section-h1">Works</h1>
 
                   <!-- Works -->
-                  <section class="timeline-works">
+                  <section class="timeline-works" id="projects">
                         <div class="timeline-works-categories">
                               <li class="timeline-works-categories-category">All Categories</li>
                         </div>
@@ -290,7 +287,7 @@
                   <!-- Education history -->
 
                   
-                  <section class="timeline-edu-work-his">
+                  <section class="timeline-edu-work-his" id="storyline">
                         <section class="timeline-eduhis">
                               <h1 class="section-h1">Education History</h1>
                               <div class="timeline-eduhis-holder">         
@@ -306,7 +303,7 @@
                   <!-- Contact Infomation -->
                   <h1 class="section-h1">Contact Infomation</h1>
                   
-                  <section class="contact-informations">
+                  <section class="contact-informations" id="contact-info">
                         <div class="contact-informations-holder">
                               <!-- Addresses -->
                               <div class="contact-information-holder" id="box">
@@ -338,14 +335,16 @@
                               </div>
                         </div>
                   </section>
+
                   <h1 class="section-h1">Get In Touch</h1>
+                  <!-- Get in touch -->
                   <section class="gitc-form">
                         <div class="gitc-form-container" id="box">
                               <form action="./sendmail.php" method="POST" class="gitcs-form-container-form" autocomplete="off">
-                                          <input type="text" name="name" placeholder="Name" class="gitc-form-container-form-name">
-                                          <input type="email" name="email" class="gitc-form-container-form-email" placeholder="Email">
-                                          <textarea name="message" class="gitc-form-container-form-email" cols="100" rows="10" placeholder="Message"></textarea>
-                                          <button type="submit">SEND MESSAGE</button>
+                                    <input type="text" name="name" placeholder="Name" class="gitc-form-container-form-name">
+                                    <input type="email" name="email" class="gitc-form-container-form-email" placeholder="Email">
+                                    <textarea name="message" class="gitc-form-container-form-email" cols="100" rows="10" placeholder="Message"></textarea>
+                                    <button type="submit">SEND MESSAGE</button>
                               </form>
                         </div>
                   </section>

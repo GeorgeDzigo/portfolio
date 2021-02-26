@@ -398,7 +398,6 @@ function blackout() {
       w.style.height = "477%"
       w.style.position = "absolute";
       w.style.background = "rgba(30,30,40,.48)";
-
 }
 
 function whiteout() { 
@@ -408,3 +407,15 @@ function whiteout() {
 
       w.style.opacity = "0";
 }
+
+// Close menu on click
+function menuDirect() {
+      let links = document.querySelectorAll(".menu-content-div");
+      let menu = document.querySelector(".menu");
+      links.forEach(v => {
+            v.addEventListener('click', function () { 
+                  menuB();
+            });    
+      });
+}
+menuDirect();
