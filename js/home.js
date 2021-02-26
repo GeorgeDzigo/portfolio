@@ -298,20 +298,113 @@ slider();
 var o = 0;
 function menuB() {
       let toS = document.querySelectorAll(".menu-content-div");
-      console.log(toS);
+      let menu = document.querySelector(".menu");
+      let leftSide = document.querySelector(".left-side");
       if (o == 0) {
             toS.forEach(v => {
-                  v.style.transition = ".5s ease";
-                  v.style.transform = "translate(-75px, 0)";
+                  menu.style.transition = '1s ease';
+                  menu.style.zIndex = "1";
+                  menu.style.width = "234px";
+                  toX();
+                  blackout();
+                  moveTimeline();
+                  leftSide.style.zIndex = 9;
+                  v.style.transition = "1s ease";
+                  v.style.transform = "translate(-75px, 0)";  
             });
             o++;
       }
       else {
             o--;
+            menu.style.transition = '1s ease';
+            menu.style.width = "80px";
+            bToburger();
+            whiteout();
+            moveBackTimeline();
             toS.forEach(v => {
-                  v.style.transition = ".5s ease";
-                  v.style.transform = "translate(75px, 0)";
+                  v.style.transition = "1s ease";
+                  v.style.transform = "translate(75px, 0)";         
             });
-            
+      
       }
+}
+// Animation
+
+function toX() { 
+      let b1 = document.querySelector(".bar1");
+      let b2 = document.querySelector(".bar2");
+      let b3 = document.querySelector(".bar3");
+      let holder = document.querySelector(".menu-burger-button");
+
+
+      b1.style.transition = "1s ease";
+      b2.style.transition = ".1s ease";
+      b3.style.transition = "1s ease";
+
+      b1.style.transform = "rotate(-45deg)";
+      b1.style.position = "absolute";
+      b2.style.opacity = "0";
+      holder.style.height = '18px';
+      b2.style.display = "none";
+      b3.style.transform = "rotate(45deg)";
+      b3.style.position = "absolute";
+      
+      b1.style.marginTop = "10px";
+      b3.style.marginTop = "10px";
+
+}
+
+function bToburger() { 
+      let b1 = document.querySelector(".bar1");
+      let b2 = document.querySelector(".bar2");
+      let b3 = document.querySelector(".bar3");
+
+      b1.style.transition = "1s ease";
+      b2.style.transition = ".9s ease";
+      b3.style.transition = "1s ease";
+
+      b1.style.transform = "rotate(0deg)";
+      b1.style.position = "unset";
+      b2.style.opacity = "1";
+      b2.style.display = "block";
+      b3.style.transform = "rotate(0deg)";
+      b3.style.position = "unset";
+      
+      b1.style.marginTop = "3px";
+      b3.style.marginTop = "3px";
+}
+
+// Move timeline
+
+function moveTimeline() { 
+      let timeline = document.querySelector(".timeline");
+      timeline.style.transition = "1s ease";
+      timeline.style.marginLeft = "-154px";
+}
+function moveBackTimeline() {
+      let timeline = document.querySelector(".timeline");
+
+      timeline.style.transition = "1s ease";
+      timeline.style.marginLeft = "0px";
+}
+
+// Blackout on timeline
+function blackout() {
+      let w = document.querySelector(".wrapper");
+
+      w.style.transition = "1s ease";
+      w.style.opacity = "1";
+      w.style.width = "100%";
+      w.style.height = "477%"
+      w.style.position = "absolute";
+      w.style.background = "rgba(30,30,40,.48)";
+
+}
+
+function whiteout() { 
+      let w = document.querySelector(".wrapper");
+
+      w.style.transition = "1s ease";
+
+      w.style.opacity = "0";
 }
