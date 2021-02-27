@@ -20,7 +20,7 @@
             .container-headings-holder-h1 {
                   font-size: 25px;
                   font-weight: 500;
-                  padding: 15px;
+                  padding: 30px;
             }
             .container-headings-holder-p {
                   font-size: 20px;
@@ -31,7 +31,7 @@
                   .container-counter {
                         width: 100%;
                         height: 100%;
-                        margin-top: 55px;
+                        margin-top: 99px;
                   }
 
                   /* CONTAINER COUNTER PRICE HOLDER */
@@ -39,20 +39,51 @@
                               height: 100px;
                               width: 100%;
                               background-color: #fff;
-                              text-align: center;
+                              border-radius: 2px;
                         }
 
                         .container-counter-price-progress {
-                              top: 30px;
+                              margin-top: 30px;
                               border-radius: 50px;
                               height: 40px;
                               width: 80%;
+                              margin-left: 9%;
                               background-color: #ebedef !important;
-                              position: relative;
+                        }
+                        .container-counter-price-progress-highlighter {
+                              height: 40px;
+                              border-radius: 50px;
+                              background-color: #19BB9B;
+                              width: 1%;
+                              display: inline-block;
                         }
                         .container-counter-price-pointer {
-                              
+                              width: 80px;
+                              height: 80px;
+                              border-radius: 50%;
+                              background-color: #19BB9B;
+                              margin-bottom: 20px;
+                              margin-top: -18px;
+                              margin-left: -44px;
+                              left: auto !important;
+                              position: absolute;
+                              display: inline-block;
                         }
+                        .container-counter-price-pointer-holder {
+                              position: relative;
+                              left: 24px;
+                              top: 31px;
+                        }
+                        /* IMAGES HOLDER AND ITS DESC HOLDER */
+                        .container-counter-services-holder {
+                              width: 150px;
+                              height: 150px;
+                        }
+                              .container-counter-services-holder-img {
+                                    width: 64px;
+                                    height: 64px;
+                              }
+                        /* END IMAGES HOLDER AND ITS DESC HOLDER */
                   /* END CONTAINER COUNTER PRICE HOLDER */
 
             /* END CONTAINER COUNTER */
