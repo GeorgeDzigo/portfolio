@@ -2,28 +2,28 @@
 function works() {
       let data = [
             {
-                  "img": "./images/works/1.jpg",
+                  "img": "./images/timeline/works/1.jpg",
                   "title": "CODE",
                   "desc": "This is my old portfolio, which is being replaced with the one you are seeing now.",
-                  "link": "./page.html?p=code"
+                  "link": "./?p=code"
             }, 
             {
-                  "img": "./images/works/2.jpg",
+                  "img": "./images/timeline/works/2.jpg",
                   "title": "Job Junior Task",
                   "desc": "This is the task with ",
-                  "link": "./page.html?p=phptask"
+                  "link": "./?p=phptask"
             }, 
             {
-                  "img": "./images/works/3.jpg",
+                  "img": "./images/timeline/works/3.jpg",
                   "title": "Jobs Finder",
                   "desc": "This website allows companies to publish their vacancies and others too see company's vacancies",
-                  "link": "./page.html?p=jobsfinder"
+                  "link": "./?p=jobsfinder"
             }, 
             {
-                  "img": "./images/works/4.jpg",
+                  "img": "./images/timeline/works/4.jpg",
                   "title": "Smart Village",
                   "desc": "This WebSite is still in process, It is like amazon but it has everything",
-                  "link": "./page.html?p=sv"
+                  "link": "./?p=sv"
             },
       ]
 
@@ -221,28 +221,28 @@ services();
 function recoms() {
       let data = [
             {
-                  "img": "images/recom/1.jpg",
+                  "img": "images/timeline/recom/1.jpg",
                   "name": "Paul Trueman",
                   "specialty": "Template Author",
                   "recom" : "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
                   "rating" : "XXXXX"
             },
             {
-                  "img": "images/recom/2.jpg",
+                  "img": "images/timeline/recom/2.jpg",
                   "name": "Paul Trueman",
                   "specialty": "Template Author",
                   "recom" : "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
                   "rating" : "XXXXX"
             },
             {
-                  "img": "images/recom/3.jpg",
+                  "img": "images/timeline/recom/3.jpg",
                   "name": "Paul Trueman",
                   "specialty": "Template Author",
                   "recom" : "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
                   "rating" : "XXXXX"
             },
             {
-                  "img": "images/recom/4.jpg",
+                  "img": "images/timeline/recom/4.jpg",
                   "name": "Paul Trueman",
                   "specialty": "Template Author",
                   "recom" : "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
@@ -294,128 +294,3 @@ function slider() {
       });
 }
 slider();
-
-var o = 0;
-function menuB() {
-      let toS = document.querySelectorAll(".menu-content-div");
-      let menu = document.querySelector(".menu");
-      let leftSide = document.querySelector(".left-side");
-      if (o == 0) {
-            toS.forEach(v => {
-                  menu.style.transition = '1s ease';
-                  menu.style.zIndex = "1";
-                  menu.style.width = "234px";
-                  toX();
-                  blackout();
-                  moveTimeline();
-                  leftSide.style.zIndex = 9;
-                  v.style.transition = "1s ease";
-                  v.style.transform = "translate(-75px, 0)";  
-            });
-            o++;
-      }
-      else {
-            o--;
-            menu.style.transition = '1s ease';
-            menu.style.width = "80px";
-            bToburger();
-            whiteout();
-            moveBackTimeline();
-            toS.forEach(v => {
-                  v.style.transition = "1s ease";
-                  v.style.transform = "translate(75px, 0)";         
-            });
-      
-      }
-}
-// Animation
-
-function toX() { 
-      let b1 = document.querySelector(".bar1");
-      let b2 = document.querySelector(".bar2");
-      let b3 = document.querySelector(".bar3");
-      let holder = document.querySelector(".menu-burger-button");
-
-
-      b1.style.transition = "1s ease";
-      b2.style.transition = ".1s ease";
-      b3.style.transition = "1s ease";
-
-      b1.style.transform = "rotate(-45deg)";
-      b1.style.position = "absolute";
-      b2.style.opacity = "0";
-      holder.style.height = '18px';
-      b2.style.display = "none";
-      b3.style.transform = "rotate(45deg)";
-      b3.style.position = "absolute";
-      
-      b1.style.marginTop = "10px";
-      b3.style.marginTop = "10px";
-
-}
-
-function bToburger() { 
-      let b1 = document.querySelector(".bar1");
-      let b2 = document.querySelector(".bar2");
-      let b3 = document.querySelector(".bar3");
-
-      b1.style.transition = "1s ease";
-      b2.style.transition = ".9s ease";
-      b3.style.transition = "1s ease";
-
-      b1.style.transform = "rotate(0deg)";
-      b1.style.position = "unset";
-      b2.style.opacity = "1";
-      b2.style.display = "block";
-      b3.style.transform = "rotate(0deg)";
-      b3.style.position = "unset";
-      
-      b1.style.marginTop = "3px";
-      b3.style.marginTop = "3px";
-}
-
-// Move timeline
-
-function moveTimeline() { 
-      let timeline = document.querySelector(".timeline");
-      timeline.style.transition = "1s ease";
-      timeline.style.marginLeft = "-154px";
-}
-function moveBackTimeline() {
-      let timeline = document.querySelector(".timeline");
-
-      timeline.style.transition = "1s ease";
-      timeline.style.marginLeft = "0px";
-}
-
-// Blackout on timeline
-function blackout() {
-      let w = document.querySelector(".wrapper");
-
-      w.style.transition = "1s ease";
-      w.style.opacity = "1";
-      w.style.width = "100%";
-      w.style.height = "477%"
-      w.style.position = "absolute";
-      w.style.background = "rgba(30,30,40,.48)";
-}
-
-function whiteout() { 
-      let w = document.querySelector(".wrapper");
-
-      w.style.transition = "1s ease";
-
-      w.style.opacity = "0";
-}
-
-// Close menu on click
-function menuDirect() {
-      let links = document.querySelectorAll(".menu-content-div");
-      let menu = document.querySelector(".menu");
-      links.forEach(v => {
-            v.addEventListener('click', function () { 
-                  menuB();
-            });    
-      });
-}
-menuDirect();

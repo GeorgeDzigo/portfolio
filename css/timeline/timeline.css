@@ -1,0 +1,578 @@
+      /* TIMELINE */
+      .timeline {
+            display: inline-block;
+            position: absolute;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 1080px;
+            height: 835px;
+      }
+      .timeline::-webkit-scrollbar {
+            display: none;
+        }
+      /* TIMELINE HEADER */ 
+            .timeline-header {
+                  width: 100%;
+                  display: inline-block;
+                  position: relative;
+                  z-index: 1;
+            }
+            .timeline-header::before {    
+                  content: "";
+                  background: url("../../images/timeline/timeline/bg.jpg");
+                  background-repeat: no-repeat;
+                  background-size: 100% 600px;
+                  position: absolute;
+                  height: 411px;
+                  top: 0px;
+                  right: 0px;
+                  bottom: 0px;
+                  left: 0px;
+                  opacity: .04;
+            }
+
+            /* TIMELINE HEADER LINE */
+                  .timeline-header-line {
+                        width: 820px;
+                        height: 30px;
+                        background-color: #fff;
+                        border-radius: 4px 4px 0px 0px;
+                        margin: 0 auto;
+                        margin-top: 25px;
+                  }
+            /* END TIMELINE HEADER LINE */
+
+            /* TIMELINE HEADER BANNER */
+                  .timeline-header-banner {
+                        width: 92%;
+                        height: 356px;
+                        background-image: url("../../images/timeline/timeline/bg.jpg");
+                        background-repeat: no-repeat;
+                        background-size:1000px 700px;
+                        margin: 0 auto;
+                  }
+                  /* TIMELINE HEADER BANNER HEADINGS */
+                        .timeline-header-banner-headings {
+                              color: white;
+                              font-size: 50px;
+                              font-weight: 800;
+                              width: 100%;
+                              height: 100%;
+                        }
+                        /* TIMELINE HEADER BANNER HEADERS */
+                              .timeline-header-banner-headers {
+                                    position: relative;
+                                    top: 25%;
+                                    left: 6%;
+                              }
+                        /* END TIMELINE HEADER BANNER HEADERS */
+
+                        /* TIMELINE HEADER BANNER HEADINGS A */
+                              .timeline-header-banner-headings-button {
+                                    padding: 12px 40px;
+                                    font-size: 15px;
+                                    font-weight: 800;
+                                    color: #1e1e28;
+                                    background-color: #f44336;
+                                    position: relative;
+                                    text-decoration: none;
+                                    top: 34%;
+                                    left: 9%;                      
+                              }
+                        /* END TIMELINE HEADER BANNER HEADINGS A */
+
+                        /* TIMELINE HEADER BANNER HEADINGS MAN */
+                              .timeline-header-banner-headings-man {
+                                    position: relative;
+                                    width: 390px;
+                                    top: -38px;
+                                    float: right;  
+                              }
+                        /* END TIMELINE HEADER BANNER HEADINGS MAN */
+                  /* END TIMELINE HEADER BANNER HEADINGS */
+            /* END TIMELINE HEADER BANNER */
+
+            /* TIMELINE EXPERIENCES */
+                 .timeline-experiences {
+                  width: 100%;
+                  display: inline-block;
+                  text-align: center;
+                  position: relative;
+                  top: -22px;
+                 }
+                 /* TIMELINE EXPERIENCES EXPERIENCE */
+                        .timeline-experiences-experience {
+                              display: inline-block;
+                              padding-left: 50px;
+                              padding-right: 50px;
+                        }
+
+                        /* TIMELINE EXPERIENCES EXPERIENCE HEADING */
+                              .timeline-experiences-experience-heading {
+                                    display: inline-block;
+                                    font-weight: 500;
+                                    font-size: 22px;
+                                    color:#f44336;
+                              }
+                        /* END TIMELINE EXPERIENCES EXPERIENCE HEADING */
+
+                        /* TIMELINE EXPERIENCES EXPERIENCE P */
+                              .timeline-experiences-experience-p {
+                                    display: inline-block;
+                                    font-size: 13px;
+                              }
+                        /* END TIMELINE EXPERIENCES EXPERIENCE P */
+
+                 /* END TIMELINE EXPERIENCES EXPERIENCE */
+            /* END TIMELINE EXPERIENCES */
+
+      /* END TIMELINE HEADER*/
+
+
+
+      /* TIMELINE SERVICES */
+            .timeline-services {
+                  width: 100%;
+                  margin-top: 30px;
+                  text-align: center;
+            }
+            /* TIMELINE SERVICE BOX */
+                  .timeline-service-box {
+                        width: 24%;
+                        height: 100%;
+                        text-align: start;
+                        padding: 25px;
+                        margin: 10px;
+                        margin: 10px;
+                  }
+                  /* TIMELINE-SERVICE-BOX-HEADINGS */
+                        .timeline-service-box-h1 {
+                              font-size: 14px;
+                              padding: 5px;
+                        }
+                        .timeline-services-box-p {
+                              font-size: 12px;
+                              letter-spacing: .25px;
+                              line-height: 1.7;
+                              color: #7a7a7a;
+                              padding: 5px;
+                        }
+                        .timeline-services-box-a {
+                              text-decoration: none;
+                              color: #f44336;
+                              font-size: 14px;
+                              font-weight: 500;
+                              padding: 5px;
+                        }
+                  /* END TIMELINE-SERVICE-BOX-HEADINGS */
+            /* END TIMELINE SERVICE BOX */
+      /* END TIMELINE SERVICES */
+
+
+
+
+      /* TIMELINE PRICE */
+            .timeline-prices {
+                  width: 100%;
+                  text-align: center;
+            }
+            /* TIMELINE PRICE BOX*/
+                  .timeline-price-box {
+                        width: 300px;
+                        height: 370px;
+                        text-align: center;
+                        margin: 5px !important;
+                  }
+                  /* TIMELINE PRICE BOX HEADINGS */
+                        .timeline-price-box-headings {
+                              padding: 30px;
+                        }
+                        /* TIMELINE PRICE BOX INNER HEADINGS */
+                              .timeline-prices-price-box-headings-h1 {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    padding: 20px;
+                              }
+                              .timeline-price-box-headings-h3-price {
+                                    color:#7a7a7a;
+                                    font-size: 13px;
+                              }
+                              .free {
+                                    color:#f44336;
+                                    font-weight: 600;
+                                    font-size: 32px;
+                              }
+                              .timeline-price-box-headings-li-includes {
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    color:#7a7a7a;
+                                    padding-top: 10px;
+                                    padding-bottom: 15px;
+                              }
+                              .x {
+                                    color:#f44336;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                              }
+                              #include-check {
+                                    color: black !important;
+                              }
+
+                              .timeline-price-box-headings-a {
+                                    color:#f44336;
+                                    font-size: 16px;
+                                    text-decoration: none;
+                                    font-weight: 500;
+                              }
+                        /* END TIMELINE PRICE BOX INNER HEADINGS */
+                  /* END TIMELINE PRICE BOX HEADINGS */
+            /* END TIMELINE PRICE BOX */
+      /* END TIMELINE  PRICE */
+
+
+      /* RECOMMENDATIONS */
+            .recoms {
+                  width: 200%;
+                  margin: 0 auto;
+                  margin-top: 30px;
+            }
+            .recoms-holder{
+                  text-align: center;
+            }
+            
+            /* RECOMS HOLDER BOX */
+            .recoms-holder-box {
+                  width: 20%;
+                  height: 180px;
+                  padding: 30px;
+                  margin: 20px;
+            }
+                  /* RECOM HOLDER RECOM IMG */
+                        .recoms-holder-recom-img {
+                              box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                              border-radius: 50%;
+                              margin-right: 34px;
+                              margin-top: -44px;
+                              width: 65px;
+                              height: 65px;
+                              float: right;
+                        }
+                  /* END RECOMS HOLDER RECOM IMG */
+
+                  /* RECOMS HOLDER RECOM HEADINGS */
+                        .recoms-holder-recom-headings {
+                              text-align: left;
+                        }
+                        .recoms-holder-recom-headings-name {
+                              padding-bottom: 4px;
+                              font-weight: 500;
+                              font-size: 14px;
+                              padding: 8px;
+                        }
+                        .recoms-holder-recom-headings-specialty {
+                              padding-top: 4px;
+                              padding-bottom: 13px;
+                              font-size: 13px;
+                              padding: 8px;
+                              color: #7a7a7a;
+                        }
+                        .recoms-holder-recom-headings-recomendation {                                  color: #7a7a7a;
+                              line-height: 1.7;
+                              color: #7a7a7a;
+                              font-size: 13px;  
+                              padding: 8px;
+                              
+                        }
+                  /* END RECOMS HOLDER RECOM HEADINGS */
+            /* END RECOMS HOLDER BOX */
+
+            /* ARROWS */
+                  .recoms-arrows {
+                        margin-right: 30px;
+                        text-align: end;
+                  }
+                  .recoms-arrows > div {
+                        display: inline-block;
+                        font-weight: 400;
+                        font-size: 30px;
+                        cursor: pointer;
+                        color: #f44336;
+                  }
+            /* END ARROWS */
+      /* END RECOMMENDATIONS */
+
+
+      /* WORKS */
+            .timeline-works {
+                  width: 100%;
+                  margin-top: 30px;
+            }
+            /* TIMELINE WORKS CATEGORIES */
+                  .timeline-works-categories {
+                        text-align: start;
+                        margin: 30px;
+                        font-size: 14px;
+                        font-weight: 500;
+                  }
+                  /* TIMELINE WORKS HOLDER */
+                        .timeline-works-holder {
+                              text-align: -webkit-center;
+                        }
+                  /* END TIMELINE WORKS HOLDER */
+
+                  /* TIMELINE WORKS HOLDER WORK */
+                        .timeline-works-holder-work {
+                              background-size: 100% 100%;
+                              margin: 20px;
+                              position: relative;
+                              overflow: hidden;
+                              height: 250px;
+                              width: 40%;
+                        }
+                        /* TIMELINE WORKS HOLDER WORK HEADINGS */
+                              .timeline-works-holder-work-headings {
+                                    background-color: #fff;
+                                    padding: 30px;
+                                    top: 250px;
+                                    text-align: start;
+                                    position: absolute;
+                                    width: 86.32%;
+                                    height: 42%;
+                              }
+                              .timeline-works-holder-work-headings-h1 {
+                                    text-decoration: none;
+                                    position: relative;
+                                    padding: 5px;
+                              }
+                              .timeline-works-holder-work-headings-p {
+                                    text-decoration: none;
+                                    color:#7a7a7a;
+                                    position: relative;
+                                    padding: 5px;
+                              }
+                              .timeline-works-holder-work-headings-a {    
+                                    text-decoration: none;
+                                    color: #f44336;
+                                    position: relative;
+                                    top: 15px;
+                                    padding: 5px;
+                              }
+                        /* END TIMELINE WORKS HOLDER WORK HEADINGS */
+                  /* END TIMELINE WORKS HOLDER WORK */
+            /* END TIMELINE WORKS CATEGORIES */
+      /* END WORKS */
+
+      /* TIMELINE EDU WORK HISTORY */
+            .timeline-eduhis, .timeline-workhis {
+                  width: 45%;
+                  display: inline-block;
+            }
+            .timeline-eduhis-holder, .timeline-workhis-holder {
+                  width: 100%;
+                  height: 100%;
+                  margin: 30px;
+            }
+            .timeline-eduhis-holder-box, .timeline-workhis-holder-box {
+                  width: 70%;
+                  height: 70%;
+                  padding: 30px;
+                  margin: 25px;
+            }
+            .timeline-eduhis-holder-box-headings-unvn, .timeline-workhis-holder-box-headings-unvn {
+                  padding: 5px;
+                  font-size: 15px;
+                  display: inline-block;
+                  font-weight: 500;
+            }
+            .timeline-eduhis-holder-box-headings-date, .timeline-workhis-holder-box-headings-date {
+                  padding: 10px 15px;
+                  border-radius: 100px;
+                  box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: #54595f;
+                  float: right;
+                  display: inline-block;
+            } 
+            .timeline-eduhis-holder-box-headings-role, .timeline-workhis-holder-box-headings-role {
+                  padding: 5px;
+                  font-size: 11px;
+                  color: #7a7a7a;
+            }
+            
+            .timeline-eduhis-holder-box-headings-p, .timeline-workhis-holder-box-headings-p {
+                  padding: 5px;
+                  font-size: 15px;
+                  font-weight: 300;
+            }
+            .timeline-eduhis-holder-box-headings-a, .timeline-workhis-holder-box-headings-a {
+                  text-decoration: none;
+                  position: relative;
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: #f44336;
+                  padding: 5px;
+                  top: 5px;
+            }
+            .timeline-eduhis-line, .timeline-workhis-line {
+                  height: 212px;
+                  width: 5px;
+                  position: relative;
+                  background-color: #ababab;
+                  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+                  float: right;
+              }
+      /* END TIMELINE EDU WORK HISTORY */
+
+
+      /* TIMELINE CONTACT INFORMATION */
+            .contact-informations {
+                  width: 100%;
+            }
+            /* CONTACT INFORMATIONS HOLDER */
+                  .contact-informations-holder {
+                        width: 100%;
+                        margin: 30px;
+                        text-align: center;
+                  }
+
+                  /* CONTACT INFORMATION HOLDER */
+                        .contact-information-holder {
+                              padding: 30px;
+                              margin: 15px;
+                              width: 278px;
+                              height: 100%;
+                        }
+                        /* Q&A*/
+                              .contact-information-holder-ques {
+                                    display: inline-block;
+                                    float: left;
+                              }
+                              .contact-information-holder-answ-li, .contact-information-holder-ques-li {
+                                    padding: 7px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                              }
+                              .contact-information-holder-answ {
+                                    display: inline-block;
+                                    float: right;
+                              }
+                             
+                        /* END Q&A */
+                  /* END CONTACT INFORMATION HOLDER */
+
+            /* END CONTACT INFORMATONS HOLDER */
+            
+      /* END TIMELINE CONTACT INFORMATION */
+      
+
+      /* GITCS FORM */
+            .gitc-form {
+                  width: 100%;
+                  margin-top: 35px;
+                  text-align: center;
+            }
+            /* GITC FORM CONTAINER */
+                  .gitc-form-container {
+                        height: 100%;
+                        width: 90%;
+                        padding: 30px;
+                        text-align: start;
+                  }
+            /* END GITC FORM CONTAINER */
+
+            /* GITC FORM CONTAINER INPUTS */
+                  .gitcs-form-container-form > input  {
+                        width: 93.3%;
+                        height: 15%;
+                        padding: 10px;
+                        margin: 20px;
+                        background-color: #f4f4f6;
+                        box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                    }
+                    .gitcs-form-container-form > textarea  {
+                          border: none;
+                          padding: 10px;
+                          margin: 20px;
+                          width: 93.4%;
+                          background-color: #f4f4f6;
+                          box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                    }
+                    .gitcs-form-container-form > button {
+                          width: 200px;
+                          height: 50px;
+                          margin: 20px;
+                          padding: 10px;
+                          font-size: 15px;
+                          color: black;
+                          font-weight: 600;
+                          background-color: #f44336;
+                          box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                    }
+                    
+            /* END GITC FORM CONTAINER INPUTS */
+            
+      /* END GITC FORM */
+
+
+      /* TIMELINE FOOTER */
+            .timeline-footer {
+                  width: 100%;
+                  margin-top: 50px;
+                  text-align: center;
+            }
+
+            /* TIMELINE FOOTER INFO CONTAINER */
+                  .timeline-footer-info-container {
+                        width: 90%;
+                        padding: 20px;
+                  }
+                  .timeline-footer-info-container > h1 {
+                        float: left;
+                        font-size: 14px;
+                        color: #7a7a7a;
+                  }
+                  .timeline-footer-info-container > span {
+                        float: right;
+                        font-size: 14px;
+                        color: #7a7a7a;
+                  }
+                  
+            /* END TIMELINE FOOTER INFO CONTAINER */
+      /* END TIMELINE FOOTER */
+      
+      /* SECTIONS GENERAL CODE */
+            .section-h1 {
+                  font-size: 17px;
+                  font-weight: 500;
+                  margin-left: 60px;
+                  margin-top: 10px;
+            }
+            .pointer {
+                  width: 10px;
+                  height: 10px;
+                  float: right;
+                  position: relative;
+                  right: -9%;
+                  border-top-right-radius: 50%;
+                  transform: rotate(-135deg);
+                  box-shadow: 0 -3px -8px 0 rgb(15 15 20 / 20%);
+                  background-color: #fff;
+            }
+            .timeline-pointer {
+                  width: 12px;
+                  height: 12px;
+                  float: right;
+                  position: relative;
+                  border: 3px solid rgb(32, 143, 5);
+                  right: -31.7%;
+                  z-index: 1;
+                  border-radius: 50%;
+                  transform: rotate(-135deg);
+                  background-color: #fff;
+                  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+                  transform: scale(1);
+                  animation: pulse 1.5s ease-in-out infinite;
+            }
+      /* END SECTIONS GENERAL CODE */
+/* END TIMELINE */
