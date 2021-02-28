@@ -89,6 +89,8 @@ function buildHTML() {
 <div class="container-counter-services-holder">
       <img src="${v["img"]}" alt="" class="container-counter-services-holder-img">
       <p class="container-counter-services-holder-p">${v['title']}</p>
+      <div class="choosedItem">
+      </div>
 </div>
                   `;
             });
@@ -162,15 +164,18 @@ function next() {
             choose.forEach(v => {
                   v.addEventListener('click', function () {
                         saveChoosedStuff(v);
+                        showSelected();
                   });
             })
             next.addEventListener('click', function () {
                   pageIndicator++;
                   display();
+                  showSelected();
             });
             previous.addEventListener('click', function () {
                   pageIndicator--;
                   display();
+                  showSelected();
             });
       }
 }
@@ -209,7 +214,36 @@ function saveChoosedStuff(value) {
                         price.innerText = totalPrice + "$";
                   }
             });
+            deselect(text);
             if(pageIndicator == 0) pageIndicator--;
       }
 }
-console.log(saveData)
+
+function showSelected() {
+      let boxes = document.querySelectorAll(".container-counter-services-holder");
+      for (let i = 0; i < boxes.length; i++) {
+            let boxP = boxes[i].querySelector(".container-counter-services-holder-p").innerText;
+            choosedStuff.forEach(v => {
+                  if (v == boxP) {
+                        boxes[i].querySelector(".choosedItem").innerHTML += 
+                        `
+                              <img src="./images/counter/check.png"/>
+                        `;
+                  }
+            });
+      }
+}
+
+
+function deselect(p) {
+      let boxes = document.querySelectorAll(".container-counter-services-holder");
+      
+
+      for (let i = 0; i < boxes.length; i++) {
+            let boxesP = boxes[i].querySelector(".container-counter-services-holder-p").innerText;
+            
+            if (boxesP == p) {
+                  boxes[i].querySelector(".choosedItem").innerHTML = "";
+            }
+      }
+}
