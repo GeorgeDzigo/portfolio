@@ -76,16 +76,72 @@
                         }
                         /* IMAGES HOLDER AND ITS DESC HOLDER */
                         .container-counter-services-holder {
-                              width: 150px;
+                              width: 230px;
                               height: 150px;
                         }
-                              .container-counter-services-holder-img {
-                                    width: 64px;
-                                    height: 64px;
-                              }
+
+                        .container-counter-holder-headings-holder {
+                              top: 40px;
+                              position: relative;
+                              font-size: 30px;
+                        }
+                              /* CONTAINER COUNTER SERVICES HOLDER */
+                                    .container-counter-services-holder-img {
+                                          width: 64px;
+                                          height: 64px;
+                                    }
+
+                                    .container-counter-holder {
+                                          width: 100%;
+                                          height: 491px;
+                                          text-align: center;
+                                          background-color: #F8F8FF !important;
+                                    }
+                                    .container-counter-services-holder {
+                                          display: inline-block;
+                                    }
+
+                                    /* CONTAINER COUNTER SERVICES HOLDER CONTAINER */
+                                          .container-counter-services-holder-container {
+                                                position: relative;
+                                                top:90px;
+                                          }
+                                    /* END CONTAINER COUNTER SERVICES HOLDER CONTAINER */
+
+                                    /* CONTAINER COUNTER SERVICES COST HOLDER */
+                                          .container-counter-services-cost-holder {
+                                                position: relative;
+                                                top: 60px;
+                                                text-align: left;
+                                                left: 352px;
+                                          }
+                                          .container-counter-services-cost-holder > h1 {
+                                                padding: 5px;
+
+                                          }
+                                    /* END CONTAINER COUNTER SERVICES COST HOLDER */
+
+                              /* END CONTAINER COUNTER SERVICES HOLDER */
                         /* END IMAGES HOLDER AND ITS DESC HOLDER */
                   /* END CONTAINER COUNTER PRICE HOLDER */
 
+
+                  /* PREVIOUS NEXT BUTTONS */
+                        .previous-next-button-holder {
+                              position: relative;
+                              text-align: center;
+                              top: 60px;
+                        }
+                        .next, .previous  {    
+                              display: block;
+                              margin: 0 auto;
+                              padding: 10px;
+                              background: none;
+                              font-size: 16px;
+                              font-weight: 600;
+                              color: #19BB9B;
+                        }
+                  /* END PREVIOUS NEXT BUTTONS */
             /* END CONTAINER COUNTER */
       /* END CONTAINER HEADINGS */
 /* END COUNTER */
