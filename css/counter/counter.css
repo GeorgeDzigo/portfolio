@@ -121,6 +121,15 @@
                                           }
                                     /* END CONTAINER COUNTER SERVICES COST HOLDER */
 
+                                    /* CHOOSED ITEM CHECK */
+                                          .choosedItem img {
+                                                position: absolute;
+                                                width: 26px;
+                                                margin-left: 19px;
+                                                margin-top: -92px;
+                                          }
+                                    /* END CHOOSED ITEM CHECK */
+
                               /* END CONTAINER COUNTER SERVICES HOLDER */
                         /* END IMAGES HOLDER AND ITS DESC HOLDER */
                   /* END CONTAINER COUNTER PRICE HOLDER */
