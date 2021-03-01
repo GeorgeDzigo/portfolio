@@ -154,6 +154,7 @@ function next() {
                         saveChoosedStuff(v);
                         pageIndicator++;
                         display();
+                        showPreviousSelected();
                    });
             });
       }
@@ -164,18 +165,19 @@ function next() {
             choose.forEach(v => {
                   v.addEventListener('click', function () {
                         saveChoosedStuff(v);
-                        showSelected();
+                        showPreviousSelected();
                   });
             })
             next.addEventListener('click', function () {
                   pageIndicator++;
                   display();
-                  showSelected();
+                  showPreviousSelected();
             });
             previous.addEventListener('click', function () {
                   pageIndicator--;
-                  display();
-                  showSelected();
+                  display();          
+                  deletIfpageIndic0();
+                  showPreviousSelected();
             });
       }
 }
@@ -192,10 +194,18 @@ function saveChoosedStuff(value) {
                   let price = document.querySelector(".container-counter-price-pointer-holder");
                   if (text == v["title"]) {
                         progressBar.style.transition = '1s ease';
-                        width += parseFloat(v["width"]);
-                        totalPrice += v["price"];
-                        progressBar.style.width = width + "%";
-                        price.innerText = totalPrice + "$";
+                        if ((width + parseFloat(v["width"])) >= 100) {
+                              width = 100;
+                              totalPrice += v["price"];
+                              progressBar.style.width = width + "%";
+                              price.innerText = totalPrice + "$";
+                        }
+                        else {
+                              width += parseFloat(v["width"]);
+                              totalPrice += v["price"];
+                              progressBar.style.width = width + "%";
+                              price.innerText = totalPrice + "$";
+                        }
                   }
             });
       }
@@ -219,14 +229,16 @@ function saveChoosedStuff(value) {
       }
 }
 
-function showSelected() {
+
+// Show previous selected stuff
+function showPreviousSelected() {
       let boxes = document.querySelectorAll(".container-counter-services-holder");
       for (let i = 0; i < boxes.length; i++) {
             let boxP = boxes[i].querySelector(".container-counter-services-holder-p").innerText;
             choosedStuff.forEach(v => {
                   if (v == boxP) {
-                        boxes[i].querySelector(".choosedItem").innerHTML += 
-                        `
+                        boxes[i].querySelector(".choosedItem").innerHTML =
+                              `
                               <img src="./images/counter/check.png"/>
                         `;
                   }
@@ -245,5 +257,20 @@ function deselect(p) {
             if (boxesP == p) {
                   boxes[i].querySelector(".choosedItem").innerHTML = "";
             }
+      }
+}
+
+
+/*
+*     this function deletes everything from
+*     choosedstuff if the user went back to
+*     the first page (pageIndicator == 0)
+*/
+
+function deletIfpageIndic0() { 
+      if (pageIndicator == 0) {
+            let progressBar = document.querySelector(".container-counter-price-progress-highlighter");
+            let price = document.querySelector(".container-counter-price-pointer");
+            choosedStuff = [];
       }
 }
