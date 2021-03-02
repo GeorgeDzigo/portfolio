@@ -21,7 +21,7 @@
 
       <link rel="stylesheet" href="css/counter/counter.css">
       
-
+      <link rel="stylesheet" href="css/counter/button.css">
       <!-- Favicons -->
       
       <link rel="stylesheet" href="./fa/css/font-awesome.min.css">
